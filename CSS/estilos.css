@@ -12,16 +12,27 @@
     --container-width: 90vw;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "catamaran", sans-serif;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 18px;
+    overflow-x: hidden;
 }
 
+/* NAVBAR */
 .nav {
     background: none;
     box-shadow: none;
     padding-top: 2em;
+}
+
+.material-icons { 
+    color: #000;
+    margin-left: -.9em;
 }
 
 .container {
@@ -45,6 +56,7 @@ body {
     color: #fff;
 }
 
+/* MAIN */
 .main-info .container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -82,7 +94,7 @@ h1 {
     margin-bottom: 1em;
 }
 
-.main-info .btn-info {
+.btn-info {
     background-color: var(--primary-color);
     border: none;
     padding: 10px 20px;
@@ -91,10 +103,11 @@ h1 {
     cursor: pointer;
 }
 
-.main-info .btn-info:hover {
+.btn-info:hover {
     background-color: var(--alt-color);
 }
 
+/* OVERLAY */
 .overlay-section {
     background-image: url(../IMG/imagen-2jpg.jpg);
     background-size: cover;
@@ -130,9 +143,12 @@ h1 {
     font-size: 1.2rem;
 }
 
+
+/* PRODUCTS */
 .products {
     width: 100vw;
     height: 80vh;
+    margin-bottom: 10em;
 }
 
 .product-title {
@@ -143,10 +159,10 @@ h1 {
     padding-top: 2em;
 }
 
-.product-title .divider {
+.divider {
     width: 200px;
     height: 5px;
-    color: var(--alt-color);
+    background-color: var(--alt-color);
     margin: 0 auto;
 }
 
@@ -159,16 +175,115 @@ h1 {
     width: 500px;
 }
 
-.carousel .carousel-item {
+.carousel .carousel-item img{
     width: 700px;
     height: 500px;
-    margin-top: -5em;
+    margin-top: -6em;
 }
 
 .carousel .carousel-item h5 {
     text-align: center;
     color: var(--alt-color);
 }
+
+/* DRUMMERS*/
+.our-drummes {
+    background-color: #000;
+    height: 100vh;
+}
+
+.our-drummes h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: -.2em;
+}
+
+/* CONTACT */
+.contact {
+    background-image: url(../IMG/-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100vw;
+    margin-top: -12em;
+}
+
+.contact h2 {
+    margin-top: 2em;
+}
+
+.container-form {
+    padding: 5em 3em;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form input {
+    color: #fff;
+}
+
+.container-form textarea {
+    height: 15em;
+    color: #fff;
+    padding: 1em;
+}
+
+.btn-info {
+    margin: 1em;
+}
+
+/* FOOTER*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media h3,
+.info h3,
+.blog h3 {
+    font-size: 2em;
+}
+
+.social-media .fa-brands {
+    margin-right: 20px;
+    font-size: 2em;
+    color: var(--alt-color);
+}
+
+.social-media .fa-brands:hover {
+    color: var(--primary-color);
+}
+
+.info a,
+.blog a {
+    color: var(--alt-color) ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
