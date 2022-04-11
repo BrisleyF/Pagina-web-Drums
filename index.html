@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
         integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/mediaqueries.css">
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="#!" class="brand-logo brand">XK-Drums</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Drummers</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <header id="home">
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#!" class="brand-logo brand">XK-Drums</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Gallery</a></li>
+                        <li><a href="#drummers">Drummers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#">Home</a></li>
@@ -40,12 +45,12 @@
             <h3>XK-Drums</h3>
         </div>
         <div class="container">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="2000">
                 <h1><span>Feel</span> The Beats</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum corrupti minima! Esse quos ipsam officia eveniet incidunt mollitia. Distinctio, laborum numquam. Aut sed error eaque, cupiditate consequuntur amet iure.</p>
                 <button class="btn-info">Read more</button>
             </div>
-            <img src="IMG/drum-1png-removebg-preview.png" alt="xk-drums-tama">
+            <img src="IMG/drum-1png-removebg-preview.png" alt="xk-drums-tama" data-aos="fade-left" data-aos-duration="2000">
         </div>
     </main>
 
@@ -59,8 +64,8 @@
         </div>
     </article>
 
-    <article class="products" id="products">
-        <section class="product-title">
+    <article class="products" data-aos="fade-up" data-aos-duration="3000">
+        <section class="product-title" id="products">
             <h2>Our Products</h2>
             <div class="divider"></div>
         </section>
@@ -87,11 +92,70 @@
                 <h5>Pearl</h5>
             </a>
         </div>
-        
     </article>
+
+    <svg id="drummers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000" fill-opacity="1" d="M0,32L1440,288L1440,320L0,320Z"></path>
+    </svg>
+
+    <div class="our-drummes" >
+        <h2>Our Drummers</h2>
+        <div class="divider"></div>
+        <div class="drummers">
+            <div class="carousel" id="carousel">
+                <a class="carousel-item" href="#one!"><img src="./IMG/Bateristas/bateristas-1.jpg" alt=""/></a>
+                <a class="carousel-item" href="#two!"><img src="./IMG/Bateristas/baterista-2.jpg" alt=""/></a>
+                <a class="carousel-item" href="#three!"><img src="./IMG/Bateristas/baterista-3.jpg" alt=""/></a>
+                <a class="carousel-item" href="#four!"><img src="./IMG/Bateristas/baterista-4.jpg" alt=""/></a>
+                <a class="carousel-item" href="#five!"><img src="./IMG/Bateristas/baterista-5jpg.jpg" alt=""/></a>
+                <a class="carousel-item" href="#six!"><img src="./IMG/Bateristas/baterista-6y.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <form class="container-form">
+            <h2>Keep in touch</h2>
+            <input type="text"placeholder="Name">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+            <button class="btn-info">Sead message</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media">
+                <h3>XK-Drums</h2>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+            </div>
+        <div class="info">
+            <h3>Company info</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Gallery</a></li>
+                <li><a href="#drummers">Drummers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="blog">
+            <h3>Blog</h3>
+            <ul>
+                <a href="#">Blog 1</a>
+                <a href="#">Blog 2</a>
+                <a href="#">Blog 3</a>
+                <a href="#">Blog 4</a>
+            </ul>
+        </div>
+        </div>
+    </footer>
 
 
     <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
